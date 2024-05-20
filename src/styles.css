@@ -71,7 +71,7 @@ li:hover .sel {
 /* Main section */
 main {
   display: grid;
-  grid-template-rows: 3fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   padding: 2rem;
 }
 
@@ -113,6 +113,69 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 1rem;
+}
+
+/* About Me*/
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbbf24;
+  box-shadow: 0px 0px 5px #171717;
+  z-index: 1;
+}
+
+.title-cont {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.about-title {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #363636;
+  padding: 1rem;
+  background-color: #eaeaea80;
+  backdrop-filter: blur(10px);
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  text-align: center;
+}
+
+.text-about {
+  box-sizing: border-box;
+  max-width: 500px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #eaeaea;
+  background-color: #363636;
+  padding: 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.benja {
+  max-width: 500px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* proyects */
+.proyects {
+  z-index: 0;
+  background-color: #363636;
+}
+
+/* contact Me */
+.contact {
+  z-index: 1;
+  background-color: #fbbf24;
+  box-shadow: 0px 0px 5px #171717;
 }
 
 footer {
