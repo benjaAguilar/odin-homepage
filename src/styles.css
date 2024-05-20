@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: monospace;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #ccc;
+}
+
+.logo,
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+/* foo icon */
+.mode {
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 2rem;
+}
+
+aside {
+  position: fixed;
+  top: 50%;
+}
+
+section,
+header {
+  padding: 2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #ccc;
+}
