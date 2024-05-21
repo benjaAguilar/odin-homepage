@@ -81,13 +81,7 @@ li:hover .sel {
 /* Main section */
 main {
   display: grid;
-  grid-template-rows: 1fr 1fr;
   padding: 2rem;
-}
-
-aside {
-  position: fixed;
-  top: 50%;
 }
 
 section,
@@ -98,14 +92,13 @@ header {
 /* Header */
 header {
   display: grid;
-  grid-template-columns: 500px 1fr;
+  grid-template-columns: 300px 1fr;
   grid-template-rows: 350px 1fr;
   align-items: center;
   column-gap: 3rem;
   background-image: url('./imgs/dark.jpg');
   background-size: cover;
   background-position: 50% 55%;
-  backdrop-filter: blur(20px);
   border-radius: 3rem;
   color: #eaeaea;
 }
@@ -113,10 +106,6 @@ header {
 .name {
   color: #fbbf24;
   font-size: 4rem;
-}
-
-.cheers {
-  align-self: flex-end;
 }
 
 .cheers h1 {
@@ -169,9 +158,9 @@ header {
 
 .about-title {
   position: absolute;
-  top: 60%;
+  top: 55%;
   left: 60%;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #363636;
   padding: 1rem;
@@ -184,7 +173,7 @@ header {
 
 .text-about {
   box-sizing: border-box;
-  max-width: 500px;
+  max-width: 300px;
   text-align: center;
   font-size: 1.2rem;
   color: #eaeaea;
@@ -197,7 +186,7 @@ header {
 }
 
 .benja {
-  max-width: 500px;
+  max-width: 300px;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
@@ -209,7 +198,6 @@ header {
   align-items: center;
   gap: 2rem;
   z-index: 0;
-  background-color: #363636;
 }
 
 .proyect-t {
@@ -229,8 +217,8 @@ header {
 .card {
   display: flex;
   align-items: end;
-  max-width: 350px;
-  height: 400px;
+  max-width: 300px;
+  height: 350px;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   border-bottom-left-radius: 0.5rem;
@@ -244,6 +232,7 @@ header {
   align-items: end;
   gap: 1.5rem;
   padding: 2rem;
+  font-size: 0.8rem;
   background-color: #17171799;
   backdrop-filter: blur(10px);
   border-top-left-radius: 150px;
@@ -325,6 +314,7 @@ header {
   gap: 1rem;
   margin-bottom: 1rem;
 }
+
 footer {
   display: flex;
   justify-content: center;
@@ -333,4 +323,51 @@ footer {
   background-color: #363636;
   color: #fbbf24;
   font-weight: bold;
+}
+
+@media (max-width: 1168px) {
+  header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .cheers {
+    grid-row: 1;
+  }
+
+  .aboutMe {
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 628px) {
+  .cheers,
+  .aboutMe {
+    justify-self: center;
+  }
+
+  .cheers h1,
+  .name {
+    font-size: 2rem;
+  }
+
+  .dev,
+  .dev-detail {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .a {
+    display: none;
+  }
+  nav {
+    justify-content: center;
+  }
+
+  main,
+  section,
+  header {
+    padding: 0;
+  }
 }
