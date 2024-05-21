@@ -6,6 +6,16 @@
   font-family: monospace;
 }
 
+@font-face {
+  font-family: bebas;
+  src: url(./fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+  font-family: monserrat;
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -113,10 +123,31 @@ header {
   font-size: 3rem;
 }
 
+.dev-cont {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.dev-detail {
+  font-size: 1.5rem;
+  font-weight: bold;
+  animation: alter 1s alternate ease-in-out infinite;
+}
+
+@keyframes alter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .dev {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-top: 1rem;
 }
 
 /* About Me*/
@@ -157,10 +188,12 @@ header {
   text-align: center;
   font-size: 1.2rem;
   color: #eaeaea;
-  background-color: #363636;
+  background: linear-gradient(#363636, #fbbf2470);
   padding: 2rem;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  font-family: monserrat;
+  font-weight: 500;
 }
 
 .benja {
@@ -227,6 +260,7 @@ header {
 .p-info {
   text-align: end;
   color: #eaeaea;
+  font-weight: 500;
 }
 
 .weather {
@@ -263,7 +297,6 @@ header {
   gap: 1rem;
   background-color: #fbbf24;
   color: #363636;
-  box-shadow: 0px 0px 5px #171717;
   border-radius: 1rem;
   z-index: 1;
 }
