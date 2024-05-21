@@ -167,8 +167,88 @@ header {
 
 /* proyects */
 .proyects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
   z-index: 0;
   background-color: #363636;
+}
+
+.proyect-t {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fbbf24;
+}
+
+.p-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.card {
+  display: flex;
+  align-items: end;
+  max-width: 350px;
+  height: 400px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background-size: cover;
+}
+
+.p-info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: #17171799;
+  backdrop-filter: blur(10px);
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.p-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fbbf24;
+}
+
+.p-info {
+  text-align: end;
+  color: #eaeaea;
+}
+
+.weather {
+  background-image: url(./imgs/weather-app.png);
+  background-position: center;
+}
+
+.todo {
+  background-image: url(./imgs/vault-list.png);
+}
+
+.library {
+  background-image: url(./imgs/library.png);
+}
+
+.battleship {
+  background-image: url(./imgs/pirates-battleships.png);
+  background-position: center;
+}
+
+.dashboard {
+  background-image: url(./imgs/admin-dashboard.png);
+}
+
+.pong {
+  background-image: url(./imgs/pong.png);
 }
 
 /* contact Me */
